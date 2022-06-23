@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+
+{% block page %}
+add item
+{% endblock %}
+{% block content %}
+<h2>Создание элемента</h2>
+<form action="{{ action }}" method="post">
+    <div class="group">
+        <p>chat name*</p>
+        <input type="text" class="input" id="chat_name" name="chat_name" value="{{ values.chat_name }}"/>
+    </div>
+    <div class="group">
+        <p>description</p>
+        <input type="text" class="input" id="description" name="description" value="{{ values.description }}"/>
+    </div>
+    <div class="group">
+        <p>rating</p>
+        <input type="text" class="input" id="rating" name="rating" value="{{ values.rating }}"/>
+    </div>
+    <div class="group">
+        <p>country id</p>
+        <input type="text" class="input" id="country_id" name="country_id" value="{{ values.country_id }}" />
+    </div>
+    <div class="group">
+        <p>mode id</p>
+        <input type="text" class="input" id="modes_id" name="modes_id" value="{{ values.modes_id }}" />
+    </div>
+    {% if values.error %}
+    <font color="red"> Ошибка: {{ values.error_text }} </font>
+    {% endif %}
+    <div class="group">
+        <p><input type="submit" class="button" value="Создать"></p>
+    </div>
+</form>
+{% endblock %}

@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block page %}
+delete item
+{% endblock %}
+{% block content %}
+<h2>Вы действительно хотите удалить данный объект?</h2>
+<form action="{{ action }}" method="post">
+    <div class="group">
+        <p>id*</p>
+        <input type="text" class="input" id="id" name="id" value="{{ values.id }}" />
+    </div>
+    {% if values.error %}
+    <font color="red"> Ошибка: {{ values.error_text }} </font>
+    {% endif %}
+    <div class="group">
+        <input type="submit" class="button" value="Да">
+    </div>
+</form>
+<a href = "{{ get_url }}"> <input type="submit" class="button" value="Нет"> </a>
+{% endblock %}

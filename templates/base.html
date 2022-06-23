@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Проектный семинар - 6.1</title>
+</head>
+<body>
+<a href = "{{ index_url }}"> Список страниц </a>
+<br>
+<a href = "{{ list_url }}"> Список элементов </a>
+<br>
+Пользователь: {{ username }}
+{% if auth_name == "Log In" %}
+<br>
+<a href=" {{ auth_url }} ">
+    <button> {{ auth_name }}</button>
+</a>
+{% else %}
+<form action=" {{ auth_url }} " method="post">
+    <input type="submit" value="{{ auth_name }}">
+</form>
+{% endif %}
+    <h1> {% block page %}{% endblock %} page - Шаблонизатор </h1>
+    {% block content %}
+
+    {% endblock %}
+</body>
+</html>

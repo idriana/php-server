@@ -1,0 +1,76 @@
+{% extends "base.html" %}
+
+{% block page %}
+list items
+{% endblock %}
+{% block content %}
+    <h2>Поиск</h2>
+    <form action="{{ action }}" method="get">
+        <div class="group">
+            <p>id</p>
+            <input type="text" class="input" id="id" name="id" value="{{ values.id }}" />
+        </div>
+        <div class="group">
+            <p>chat name</p>
+            <input type="text" class="input" id="chat_name" name="chat_name" value="{{ values.chat_name }}"/>
+        </div>
+        <div class="group">
+            <p>description</p>
+            <input type="text" class="input" id="description" name="description" value="{{ values.description }}"/>
+        </div>
+        <div class="group">
+            <p>min rating</p>
+            <input type="text" class="input" id="rating" name="rating" value="{{ values.rating }}"/>
+        </div>
+        <div class="group">
+            <p>country</p>
+            <input type="text" class="input" id="country" name="country" value="{{ values.country }}" />
+        </div>
+        <div class="group">
+            <p>mode</p>
+            <input type="text" class="input" id="modes" name="modes" value="{{ values.modes }}" />
+        </div>
+        <div class="group">
+            <p>page number</p>
+            <input type="number" class="input" id="page_number" name="page_number" value="{{ values.page_number }}" />
+        </div>
+        <div class="group">
+            <p>items per page</p>
+            <input type="number" class="input" id="items_per_page" name="items_per_page" value="{{ values.items_per_page }}" />
+        </div>
+        <div class="group">
+            <p><input type="submit" class="button" value="Найти"></p>
+        </div>
+    </form>
+    <h2>Результаты поиска</h2>
+    {% if not error %}
+    <table border = 1>
+        <tr>
+            <td>id</td>
+            <td>chat</td>
+            <td>description</td>
+            <td>rating</td>
+            <td>ref1name</td>
+            <td>ref2name</td>
+            <td>подробности</td>
+            <td>редактирование</td>
+            <td>удаление</td>
+        </tr>
+        {% for chat in chats %}
+        <tr>
+            <td>{{ chat.id }}</td>
+            <td>{{ chat.chat_name }}</td>
+            <td>{{ chat.description }}</td>
+            <td>{{ chat.rating }}</td>
+            <td>{{ chat.ref1name }}</td>
+            <td>{{ chat.ref2name }}</td>
+            <td><a href=" {{ get_url }}?id={{ chat.id }} "><button> Подробнее </button></a></td>
+            <td><a href=" {{ edit_url }}?id={{ chat.id }} "><button> Редактировать </button></a></td>
+            <td><a href=" {{ delete_url }}?id={{ chat.id }} "><button> Удалить </button></a></td>
+        </tr>
+        {% endfor %}
+    </table>
+    {% else %}
+    <p> По вашему запросу ничего не найдено </p>
+    {% endif %}
+{% endblock %}

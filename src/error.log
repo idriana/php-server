@@ -1,0 +1,151 @@
+[22-Jun-2022 21:11:29 UTC] PHP Warning:  Array to string conversion in C:\Users\mad_f\PhpstormProjects\untitled\project-seminar-romanov\src\listitems.php on line 68
+[22-Jun-2022 21:11:29 UTC] listitem: Ошибка запроса к базе
+[22-Jun-2022 21:12:07 UTC] PHP Warning:  Array to string conversion in C:\Users\mad_f\PhpstormProjects\untitled\project-seminar-romanov\src\listitems.php on line 69
+[22-Jun-2022 21:12:07 UTC] listitem: Ошибка запроса к базе
+[22-Jun-2022 21:12:38 UTC] PHP Warning:  Array to string conversion in C:\Users\mad_f\PhpstormProjects\untitled\project-seminar-romanov\src\listitems.php on line 70
+[22-Jun-2022 21:12:38 UTC] listitem: Ошибка запроса к базе
+[22-Jun-2022 21:13:28 UTC] PHP Warning:  Array to string conversion in C:\Users\mad_f\PhpstormProjects\untitled\project-seminar-romanov\src\listitems.php on line 73
+[22-Jun-2022 21:13:28 UTC] listitem: Ошибка запроса к базе
+[22-Jun-2022 21:13:37 UTC] PHP Warning:  Array to string conversion in C:\Users\mad_f\PhpstormProjects\untitled\project-seminar-romanov\src\listitems.php on line 73
+[22-Jun-2022 21:13:37 UTC] listitem: Ошибка запроса к базе
+[22-Jun-2022 21:14:03 UTC] PHP Warning:  Array to string conversion in C:\Users\mad_f\PhpstormProjects\untitled\project-seminar-romanov\src\listitems.php on line 74
+[22-Jun-2022 21:14:03 UTC] listitem: Ошибка запроса к базе
+[22-Jun-2022 21:14:34 UTC] listitem: Ошибка запроса к базе
+[22-Jun-2022 21:15:11 UTC] listitem: Ошибка запроса к базе
+[22-Jun-2022 21:15:55 UTC] listitem: Ошибка запроса к базе
+[22-Jun-2022 21:16:26 UTC] listitem: Ошибка запроса к базе
+[22-Jun-2022 21:20:11 UTC] PHP Fatal error:  Uncaught Error: Cannot use object of type stdClass as array in C:\Users\mad_f\PhpstormProjects\untitled\project-seminar-romanov\src\listitems.php:94
+Stack trace:
+#0 {main}
+  thrown in C:\Users\mad_f\PhpstormProjects\untitled\project-seminar-romanov\src\listitems.php on line 94
+[22-Jun-2022 21:29:48 UTC] PHP Warning:  Undefined array key 0 in C:\Users\mad_f\PhpstormProjects\untitled\project-seminar-romanov\src\listitems.php on line 96
+[22-Jun-2022 21:29:48 UTC] PHP Warning:  Trying to access array offset on value of type null in C:\Users\mad_f\PhpstormProjects\untitled\project-seminar-romanov\src\listitems.php on line 96
+[22-Jun-2022 21:29:59 UTC] PHP Warning:  Undefined array key 0 in C:\Users\mad_f\PhpstormProjects\untitled\project-seminar-romanov\src\listitems.php on line 96
+[22-Jun-2022 21:29:59 UTC] PHP Warning:  Trying to access array offset on value of type null in C:\Users\mad_f\PhpstormProjects\untitled\project-seminar-romanov\src\listitems.php on line 96
+[22-Jun-2022 21:30:09 UTC] PHP Warning:  Undefined array key 0 in C:\Users\mad_f\PhpstormProjects\untitled\project-seminar-romanov\src\listitems.php on line 96
+[22-Jun-2022 21:30:09 UTC] PHP Warning:  Trying to access array offset on value of type null in C:\Users\mad_f\PhpstormProjects\untitled\project-seminar-romanov\src\listitems.php on line 96
+[22-Jun-2022 21:30:50 UTC] PHP Warning:  Undefined array key 0 in C:\Users\mad_f\PhpstormProjects\untitled\project-seminar-romanov\src\listitems.php on line 96
+[22-Jun-2022 21:30:50 UTC] PHP Warning:  Trying to access array offset on value of type null in C:\Users\mad_f\PhpstormProjects\untitled\project-seminar-romanov\src\listitems.php on line 96
+[22-Jun-2022 21:31:48 UTC] PHP Warning:  Undefined array key 0 in C:\Users\mad_f\PhpstormProjects\untitled\project-seminar-romanov\src\listitems.php on line 96
+[22-Jun-2022 21:31:48 UTC] PHP Warning:  Trying to access array offset on value of type null in C:\Users\mad_f\PhpstormProjects\untitled\project-seminar-romanov\src\listitems.php on line 96
+[22-Jun-2022 21:32:29 UTC] PHP Warning:  Undefined array key 0 in C:\Users\mad_f\PhpstormProjects\untitled\project-seminar-romanov\src\listitems.php on line 96
+[22-Jun-2022 21:32:29 UTC] PHP Warning:  Trying to access array offset on value of type null in C:\Users\mad_f\PhpstormProjects\untitled\project-seminar-romanov\src\listitems.php on line 96
+[22-Jun-2022 21:32:43 UTC] listitem: Ошибка запроса к базе
+[22-Jun-2022 21:33:36 UTC] PHP Warning:  Undefined array key 0 in C:\Users\mad_f\PhpstormProjects\untitled\project-seminar-romanov\src\listitems.php on line 96
+[22-Jun-2022 21:33:36 UTC] PHP Warning:  Trying to access array offset on value of type null in C:\Users\mad_f\PhpstormProjects\untitled\project-seminar-romanov\src\listitems.php on line 96
+[22-Jun-2022 21:33:57 UTC] PHP Warning:  Undefined array key 0 in C:\Users\mad_f\PhpstormProjects\untitled\project-seminar-romanov\src\listitems.php on line 96
+[22-Jun-2022 21:33:57 UTC] PHP Warning:  Trying to access array offset on value of type null in C:\Users\mad_f\PhpstormProjects\untitled\project-seminar-romanov\src\listitems.php on line 96
+[22-Jun-2022 21:38:53 UTC] listitem: Ошибка запроса к базе
+[22-Jun-2022 21:39:10 UTC] listitem: Ошибка запроса к базе
+[22-Jun-2022 21:39:37 UTC] listitem: Ошибка запроса к базе
+[22-Jun-2022 21:40:26 UTC] listitem: PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'modes.name' in 'field list' in C:\Users\mad_f\PhpstormProjects\untitled\project-seminar-romanov\src\listitems.php:82
+Stack trace:
+#0 C:\Users\mad_f\PhpstormProjects\untitled\project-seminar-romanov\src\listitems.php(82): PDOStatement->execute()
+#1 {main}
+[22-Jun-2022 21:41:19 UTC] listitem: PDOException: SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'id' in where clause is ambiguous in C:\Users\mad_f\PhpstormProjects\untitled\project-seminar-romanov\src\listitems.php:81
+Stack trace:
+#0 C:\Users\mad_f\PhpstormProjects\untitled\project-seminar-romanov\src\listitems.php(81): PDOStatement->execute()
+#1 {main}
+[22-Jun-2022 21:42:23 UTC] listitem: PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ':chat_name='sdfg'' at line 9 in C:\Users\mad_f\PhpstormProjects\untitled\project-seminar-romanov\src\listitems.php:81
+Stack trace:
+#0 C:\Users\mad_f\PhpstormProjects\untitled\project-seminar-romanov\src\listitems.php(81): PDOStatement->execute()
+#1 {main}
+[22-Jun-2022 21:42:34 UTC] listitem: PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ':chat_name='sdfg'' at line 9 in C:\Users\mad_f\PhpstormProjects\untitled\project-seminar-romanov\src\listitems.php:81
+Stack trace:
+#0 C:\Users\mad_f\PhpstormProjects\untitled\project-seminar-romanov\src\listitems.php(81): PDOStatement->execute()
+#1 {main}
+[22-Jun-2022 21:42:36 UTC] listitem: PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ':chat_name='sdfg'' at line 9 in C:\Users\mad_f\PhpstormProjects\untitled\project-seminar-romanov\src\listitems.php:81
+Stack trace:
+#0 C:\Users\mad_f\PhpstormProjects\untitled\project-seminar-romanov\src\listitems.php(81): PDOStatement->execute()
+#1 {main}
+[22-Jun-2022 21:43:12 UTC] listitem: PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ':chat.chat_name='sdfg'' at line 9 in C:\Users\mad_f\PhpstormProjects\untitled\project-seminar-romanov\src\listitems.php:82
+Stack trace:
+#0 C:\Users\mad_f\PhpstormProjects\untitled\project-seminar-romanov\src\listitems.php(82): PDOStatement->execute()
+#1 {main}
+[22-Jun-2022 21:44:30 UTC] listitem: PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'modes' in 'where clause' in C:\Users\mad_f\PhpstormProjects\untitled\project-seminar-romanov\src\listitems.php:82
+Stack trace:
+#0 C:\Users\mad_f\PhpstormProjects\untitled\project-seminar-romanov\src\listitems.php(82): PDOStatement->execute()
+#1 {main}
+[22-Jun-2022 22:06:59 UTC] PHP Fatal error:  Uncaught Twig\Error\SyntaxError: Unexpected character "!". in C:\Users\mad_f\PhpstormProjects\untitled\project-seminar-romanov\templates\listitems.html:38
+Stack trace:
+#0 C:\Users\mad_f\PhpstormProjects\untitled\project-seminar-romanov\vendor\twig\twig\src\Lexer.php(279): Twig\Lexer->lexExpression()
+#1 C:\Users\mad_f\PhpstormProjects\untitled\project-seminar-romanov\vendor\twig\twig\src\Lexer.php(180): Twig\Lexer->lexBlock()
+#2 C:\Users\mad_f\PhpstormProjects\untitled\project-seminar-romanov\vendor\twig\twig\src\Environment.php(460): Twig\Lexer->tokenize()
+#3 C:\Users\mad_f\PhpstormProjects\untitled\project-seminar-romanov\vendor\twig\twig\src\Environment.php(507): Twig\Environment->tokenize()
+#4 C:\Users\mad_f\PhpstormProjects\untitled\project-seminar-romanov\vendor\twig\twig\src\Environment.php(348): Twig\Environment->compileSource()
+#5 C:\Users\mad_f\PhpstormProjects\untitled\project-seminar-romanov\vendor\twig\twig\src\Environment.php(309): Twig\Environment->loadTemplate()
+#6 C:\Users\mad_f\PhpstormProjects\untitled\project-seminar-romanov\vendor\twig\twig\src\Environment.php(277): Twig\Environment->load()
+#7 C:\Users\mad_f\PhpstormProjects\untitled\project-seminar-romanov\src\listitems.php(119): Twig\Environment->render()
+#8 {main}
+  thrown in C:\Users\mad_f\PhpstormProjects\untitled\project-seminar-romanov\templates\listitems.html on line 38
+[22-Jun-2022 22:07:03 UTC] PHP Fatal error:  Uncaught Twig\Error\SyntaxError: Unexpected character "!". in C:\Users\mad_f\PhpstormProjects\untitled\project-seminar-romanov\templates\listitems.html:38
+Stack trace:
+#0 C:\Users\mad_f\PhpstormProjects\untitled\project-seminar-romanov\vendor\twig\twig\src\Lexer.php(279): Twig\Lexer->lexExpression()
+#1 C:\Users\mad_f\PhpstormProjects\untitled\project-seminar-romanov\vendor\twig\twig\src\Lexer.php(180): Twig\Lexer->lexBlock()
+#2 C:\Users\mad_f\PhpstormProjects\untitled\project-seminar-romanov\vendor\twig\twig\src\Environment.php(460): Twig\Lexer->tokenize()
+#3 C:\Users\mad_f\PhpstormProjects\untitled\project-seminar-romanov\vendor\twig\twig\src\Environment.php(507): Twig\Environment->tokenize()
+#4 C:\Users\mad_f\PhpstormProjects\untitled\project-seminar-romanov\vendor\twig\twig\src\Environment.php(348): Twig\Environment->compileSource()
+#5 C:\Users\mad_f\PhpstormProjects\untitled\project-seminar-romanov\vendor\twig\twig\src\Environment.php(309): Twig\Environment->loadTemplate()
+#6 C:\Users\mad_f\PhpstormProjects\untitled\project-seminar-romanov\vendor\twig\twig\src\Environment.php(277): Twig\Environment->load()
+#7 C:\Users\mad_f\PhpstormProjects\untitled\project-seminar-romanov\src\listitems.php(119): Twig\Environment->render()
+#8 {main}
+  thrown in C:\Users\mad_f\PhpstormProjects\untitled\project-seminar-romanov\templates\listitems.html on line 38
+[23-Jun-2022 00:47:00 UTC] getitem: Exception: getitem: недостаточно данных in C:\Users\mad_f\PhpstormProjects\untitled\project-seminar-romanov\src\edititem.php:38
+Stack trace:
+#0 {main}
+[23-Jun-2022 00:47:28 UTC] getitem: Exception: getitem: недостаточно данных in C:\Users\mad_f\PhpstormProjects\untitled\project-seminar-romanov\src\edititem.php:38
+Stack trace:
+#0 {main}
+[23-Jun-2022 00:49:07 UTC] getitem: Exception: getitem: недостаточно данных in C:\Users\mad_f\PhpstormProjects\untitled\project-seminar-romanov\src\edititem.php:38
+Stack trace:
+#0 {main}
+[23-Jun-2022 00:53:34 UTC] login: неверный метод
+[23-Jun-2022 00:54:00 UTC] login: неверный метод
+[23-Jun-2022 00:54:09 UTC] login: неверный метод
+[23-Jun-2022 00:54:42 UTC] login: неверный метод
+[23-Jun-2022 00:55:22 UTC] login: неверный метод
+[23-Jun-2022 00:55:33 UTC] login: неверный метод
+[23-Jun-2022 00:55:52 UTC] getitem: Exception: getitem: недостаточно данных in C:\Users\mad_f\PhpstormProjects\untitled\project-seminar-romanov\src\edititem.php:38
+Stack trace:
+#0 {main}
+[23-Jun-2022 00:55:59 UTC] login: неверный метод
+[23-Jun-2022 00:56:05 UTC] getitem: Exception: getitem: недостаточно данных in C:\Users\mad_f\PhpstormProjects\untitled\project-seminar-romanov\src\edititem.php:38
+Stack trace:
+#0 {main}
+[23-Jun-2022 01:00:48 UTC] getitem: Exception: getitem: недостаточно данных in C:\Users\mad_f\PhpstormProjects\untitled\project-seminar-romanov\src\edititem.php:38
+Stack trace:
+#0 {main}
+[23-Jun-2022 01:00:58 UTC] getitem: Exception: getitem: недостаточно данных in C:\Users\mad_f\PhpstormProjects\untitled\project-seminar-romanov\src\edititem.php:38
+Stack trace:
+#0 {main}
+[23-Jun-2022 01:01:24 UTC] getitem: Exception: getitem: недостаточно данных in C:\Users\mad_f\PhpstormProjects\untitled\project-seminar-romanov\src\edititem.php:38
+Stack trace:
+#0 {main}
+[23-Jun-2022 01:01:27 UTC] getitem: Exception: getitem: недостаточно данных in C:\Users\mad_f\PhpstormProjects\untitled\project-seminar-romanov\src\edititem.php:38
+Stack trace:
+#0 {main}
+[23-Jun-2022 01:01:31 UTC] getitem: Exception: getitem: недостаточно данных in C:\Users\mad_f\PhpstormProjects\untitled\project-seminar-romanov\src\edititem.php:38
+Stack trace:
+#0 {main}
+[23-Jun-2022 01:01:45 UTC] getitem: Exception: getitem: недостаточно данных in C:\Users\mad_f\PhpstormProjects\untitled\project-seminar-romanov\src\edititem.php:38
+Stack trace:
+#0 {main}
+[23-Jun-2022 01:01:49 UTC] getitem: Exception: getitem: недостаточно данных in C:\Users\mad_f\PhpstormProjects\untitled\project-seminar-romanov\src\edititem.php:38
+Stack trace:
+#0 {main}
+[23-Jun-2022 01:02:34 UTC] getitem: Exception: getitem: недостаточно данных in C:\Users\mad_f\PhpstormProjects\untitled\project-seminar-romanov\src\edititem.php:38
+Stack trace:
+#0 {main}
+[23-Jun-2022 01:02:36 UTC] getitem: Exception: getitem: недостаточно данных in C:\Users\mad_f\PhpstormProjects\untitled\project-seminar-romanov\src\edititem.php:38
+Stack trace:
+#0 {main}
+[23-Jun-2022 01:02:59 UTC] getitem: Exception: getitem: недостаточно данных in C:\Users\mad_f\PhpstormProjects\untitled\project-seminar-romanov\src\edititem.php:38
+Stack trace:
+#0 {main}
+[23-Jun-2022 01:11:18 UTC] getitem: Exception: getitem: недостаточно данных in C:\Users\mad_f\PhpstormProjects\untitled\project-seminar-romanov\src\edititem.php:38
+Stack trace:
+#0 {main}
+[23-Jun-2022 01:29:16 UTC] getitem: Exception: getitem: недостаточно данных in C:\Users\mad_f\PhpstormProjects\untitled\project-seminar-romanov\src\edititem.php:38
+Stack trace:
+#0 {main}
+[23-Jun-2022 02:45:28 UTC] login: неверный метод
