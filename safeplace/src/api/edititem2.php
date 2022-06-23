@@ -42,38 +42,7 @@ try {
 }
 
 try {
-    $query_array = array();
-    $form_query = array();
-    $query_array[":chat_id"] = $data["id"];
-    if (array_key_exists('chat_name', $data) and $data['chat_name'] != "") {
-        $query_array[":chat_name"] = $data['chat_name'];
-        $form_query['chat_name'] = ":chat_name";
-    }
-    if (array_key_exists('description', $data)  and $data['description'] != "") {
-        $query_array[":description"] = $data['description'];
-        $form_query['description'] = ":description";
-    }
-    if (array_key_exists('rating', $data) and $data['rating'] != "") {
-        $query_array[":rating"] = $data['rating'];
-        $form_query['rating'] = ":rating";
-    }
-    if (array_key_exists('country_id', $data) and $data['country_id'] != "") {
-        $query_array[":country_id"] = $data['country_id'];
-        $form_query['country_id'] = ":country_id";
-    }
-    if (array_key_exists('modes_id', $data) and $data['modes_id'] != "") {
-        $query_array[":modes_id"] = $data['modes_id'];
-        $form_query['modes_id'] = ":modes_id";
-    }
-    $values = http_build_query($form_query);
-    $values = str_replace("%3A", ":", $values);
-    $values = str_replace("&", ", ", $values);
-    error_log('UPDATE chat SET '.$values.' WHERE chat.id = :chat_id');
-    #$values = implode(', ', array_keys($query_array));
-    #$into = str_replace(":", "", $values);
-    $query = 'UPDATE chat SET '.$values.' WHERE chat.id = :chat_id';
-    $sth = $dbh->prepare($query);
-    $sth->execute($query_array);
+
     echo '{"status": "success","id": '.$data["id"].'}';
     $header = "Location: ".'http://'.$_SERVER['HTTP_HOST']."/src/getitem.php?id=".$data["id"];
     header($header);

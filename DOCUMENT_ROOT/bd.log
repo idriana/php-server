@@ -1,0 +1,9 @@
+PDOException: SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`mydb`.`user_chat`, CONSTRAINT `fk_user_has_chat_chat1` FOREIGN KEY (`chat_id`) REFERENCES `chat` (`id`)) in C:\Users\mad_f\PhpstormProjects\untitled\project-seminar-romanov\safeplace\app\DBController\DBController.php:171
+Stack trace:
+#0 C:\Users\mad_f\PhpstormProjects\untitled\project-seminar-romanov\safeplace\app\DBController\DBController.php(171): PDOStatement->execute()
+#1 C:\Users\mad_f\PhpstormProjects\untitled\project-seminar-romanov\safeplace\app\DBController\DBController.php(100): app\DBController\DBController->queryFetchAll()
+#2 C:\Users\mad_f\PhpstormProjects\untitled\project-seminar-romanov\safeplace\app\APIController\POSTController.php(48): app\DBController\DBController->Delete()
+#3 C:\Users\mad_f\PhpstormProjects\untitled\project-seminar-romanov\safeplace\app\PageController\PageController.php(164): app\APIController\POSTController->delete()
+#4 C:\Users\mad_f\PhpstormProjects\untitled\project-seminar-romanov\safeplace\app\EventHandler.php(83): app\PageController\PageController->deleteitem_api()
+#5 C:\Users\mad_f\PhpstormProjects\untitled\project-seminar-romanov\DOCUMENT_ROOT\index.php(17): app\EventHandler->run()
+#6 {main}

@@ -6,6 +6,7 @@ edit item
 {% block content %}
 <h2>Поиск</h2>
 <form action="" method="get">
+    <input type="hidden" class="input" id="page" name="page" value="edititem">
     <div class="group">
         <p>id*</p>
         <input type="text" class="input" id="id" name="id" value="{{ values.id }}" />
@@ -18,10 +19,11 @@ edit item
 <b>Запись не найдена</b>
 {% endif %}
 <h2>Редактирование</h2>
-<form action="{{ edit_url }}" method="post">
+<form action="{{ action }}" method="post">
     <input type="hidden" class="input" id="chat_id" name="id" value="{{ values.id }}">
+    <input type="hidden" class="input" id="redirect_page" name="page" value="edititem_api">
     <div class="group">
-        <p>chat name*</p>
+        <p>chat name</p>
         <label for="chat_name"></label>
         <input type="text" class="input" id="chat_name" name="chat_name" value="{{ values.chat_name }}"/>
     </div>

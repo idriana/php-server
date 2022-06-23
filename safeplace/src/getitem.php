@@ -15,10 +15,12 @@ session_start();
 
 if (isset($_SESSION["username"])){
     $username = $_SESSION["username"];
+    $auth_type = false;
     $auth_url = 'http://'.$_SERVER['HTTP_HOST']."/src/api/logout.php";
     $auth_name = "Log Out";
 } else {
     $username = 'Anonymous';
+    $auth_type = true;
     $auth_url = 'http://'.$_SERVER['HTTP_HOST']."/src/login.php";
     $auth_name = "Log In";
 }
@@ -37,38 +39,16 @@ try {
         http_response_code(400);
         throw new Exception("getitem: недостаточно данных");
     }
-    $query = 'SELECT * FROM chat WHERE id = :chat_id';
-    $sth = $dbh->prepare($query);
-    $sth->execute(array('chat_id' => $_GET['id']));
-    $res = $sth->fetchAll();
-    $res = json_decode(json_encode($res), true);
+
 } catch (PDOException $e) {
     error_log('getitem: '."Ошибка запроса к базе");
     http_response_code(400);
+    die('[]');
 } catch (Exception $e){
     error_log('getitem: '.$e);
     http_response_code(400);
+    die('[]');
 }
 
 $loader = new \Twig\Loader\FilesystemLoader('../templates');
 $twig = new \Twig\Environment($loader);
-
-$data = [
-    'values' => $_GET,
-    'index_url' => 'http://'.$_SERVER['HTTP_HOST'],
-    'edit_url' => 'http://'.$_SERVER['HTTP_HOST'].'/src/api/edititem2.php',
-    'delete_url' => 'http://'.$_SERVER['HTTP_HOST'].'/src/deleteitem.php',
-    'list_url' => 'http://'.$_SERVER['HTTP_HOST']."/src/listitems.php",
-    'username' => $username,
-    'auth_url' => $auth_url,
-    'auth_name' => $auth_name,
-];
-
-if (isset($res) and $res != []) {
-    $data['values'] = array_merge($data['values'], $res[0]);
-} else {
-    $data['error'] = true;
-}
-
-$str = $twig->render('edititem.html', $data);
-echo $str;

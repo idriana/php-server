@@ -5,7 +5,8 @@ list items
 {% endblock %}
 {% block content %}
     <h2>Поиск</h2>
-    <form action="{{ action }}" method="get">
+    <form action="{{ list_url }}" method="get">
+        <input type="hidden" class="input" id="page" name="page" value="listitems">
         <div class="group">
             <p>id</p>
             <input type="text" class="input" id="id" name="id" value="{{ values.id }}" />
@@ -64,9 +65,9 @@ list items
             <td>{{ chat.rating }}</td>
             <td>{{ chat.ref1name }}</td>
             <td>{{ chat.ref2name }}</td>
-            <td><a href=" {{ get_url }}?id={{ chat.id }} "><button> Подробнее </button></a></td>
-            <td><a href=" {{ edit_url }}?id={{ chat.id }} "><button> Редактировать </button></a></td>
-            <td><a href=" {{ delete_url }}?id={{ chat.id }} "><button> Удалить </button></a></td>
+            <td><a href=" {{ get_url }}&id={{ chat.id }} "><button> Подробнее </button></a></td>
+            <td><a href=" {{ edit_url }}&id={{ chat.id }} "><button> Редактировать </button></a></td>
+            <td><a href=" {{ delete_url }}&id={{ chat.id }} "><button> Удалить </button></a></td>
         </tr>
         {% endfor %}
     </table>

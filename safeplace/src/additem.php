@@ -26,15 +26,4 @@ if (isset($_SESSION["username"])){
 $loader = new \Twig\Loader\FilesystemLoader('../templates');
 $twig = new \Twig\Environment($loader);
 
-$data = [
-    'values' => $_GET,
-    'index_url' => 'http://'.$_SERVER['HTTP_HOST'],
-    'list_url' => 'http://'.$_SERVER['HTTP_HOST']."/src/listitems.php",
-    'action' => 'http://'.$_SERVER['HTTP_HOST'].'/src/api/additem2.php',
-    'username' => $username,
-    'auth_url' => $auth_url,
-    'auth_name' => $auth_name,
-];
 
-$str = $twig->render('additem.html', $data);
-echo $str;

@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block page %}
+index
+{% endblock %}
+{% block content %}
+Список страниц:
+
+<div><a href = "{{ list_url }}"> список элементов </a></div>
+<div><a href = "{{ get_url }}"> получение элемента 1 </a></div>
+<div><a href = "{{ add_url }}"> добавление элемента 1 </a></div>
+<div><a href = "{{ edit_url }}"> редактирование элемента 1 </a></div>
+<div><a href = "{{ delete_url }}"> удаление элемента 1 </a></div>
+{% endblock %}

@@ -43,22 +43,7 @@ try {
 }
 
 try {
-    $query_array = array();
-    $query_array[":chat_name"] = $data['chat_name'];
-    if (array_key_exists('description', $data) and $data['description'] != "")
-        $query_array[":description"] = $data['description'];
-    if (array_key_exists('rating', $data) and $data['rating'] != "" and floatval($data['rating'] != 0))
-        $query_array[":rating"] = floatval($data['rating']);
-    if (array_key_exists('country_id', $data) and $data['country_id'] != "")
-        $query_array[":country_id"] = intval($data['country_id']);
-    if (array_key_exists('modes_id', $data) and $data['modes_id'] != "")
-        $query_array[":modes_id"] = intval($data['modes_id']);
-    error_log(json_encode($query_array), 3, "post.log");
-    $values = implode(', ', array_keys($query_array));
-    $into = str_replace(":", "", $values);
-    $query = 'INSERT INTO chat (' . $into . ') VALUES (' . $values . ')';
-    $sth = $dbh->prepare($query);
-    $sth->execute($query_array);
+
     echo '{"status": "success","id": '.$dbh->lastInsertId().'}';
     $header = "Location: ".'http://'.$_SERVER['HTTP_HOST']."/src/getitem.php";
     $header = $header."?".http_build_query(array("id"=>$dbh->lastInsertId()));

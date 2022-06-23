@@ -36,16 +36,13 @@ try {
 
 try {
     $query_array = array();
-    $form_query = array();
     $query_array[":chat_id"] = $data["id"];
     $query = 'SELECT * FROM user_chat WHERE user_chat.chat_id = :chat_id';
     $sth = $dbh->prepare($query);
     $sth->execute($query_array);
     $res = $sth->fetchAll();
     if ($res == []) {
-        $query = 'DELETE FROM chat WHERE chat.id = :chat_id';
-        $sth = $dbh->prepare($query);
-        $sth->execute($query_array);
+
         echo '{"status": "success"}';
         $header = "Location: ".'http://'.$_SERVER['HTTP_HOST']."/src/getitem.php?id=".$data["id"];
         header($header);
